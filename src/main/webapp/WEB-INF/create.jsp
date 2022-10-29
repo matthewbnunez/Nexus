@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!-- c:out ; c:forEach etc. --> 
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!-- Formatting (dates) --> 
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!-- form:form -->
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
@@ -10,8 +10,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Add Book</title>
+<meta charset="UTF-8">
+<title>Create Post</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <h1>Add a Book to Your Shelf!</h1>
@@ -26,7 +27,7 @@
 
 <form:hidden path="user" value="${ userId }" />
 
-<button type="submit">Submit</button>
+<button type="submit" class="bg-blue-500 rounded-lg p-2 text-xl text-white my-3">Submit</button>
 
 </form:form>
 </body>
