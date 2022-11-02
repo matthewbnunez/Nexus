@@ -10,25 +10,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Create Post</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <title>Create Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<h1>Add a Book to Your Shelf!</h1>
-<form:form action="/home/post/process" method="POST" modelAttribute="newShare">
-
-<div>
-	<form:label path="theShare">Tweet: </form:label>
-	<form:input path="theShare"/>
-	<form:errors path="theShare"/>
-</div>
-
-
-<form:hidden path="user" value="${ userId }" />
-
-<button type="submit" class="bg-blue-500 rounded-lg p-2 text-xl text-white my-3">Submit</button>
-
-</form:form>
+    <h1>Add a Book to Your Shelf!</h1>
+    <form:form action="/home/post/process" method="POST" modelAttribute="newShare">
+        <div>
+            <form:label path="theShare">Tweet: </form:label>
+            <form:input path="theShare"/>
+            <form:errors path="theShare"/>
+        </div>
+        <form:hidden path="user" value="${ userId }" />
+        <button type="submit" class="bg-blue-500 rounded-lg p-2 text-xl text-white my-3">Submit</button>
+    </form:form>
 </body>
 </html>

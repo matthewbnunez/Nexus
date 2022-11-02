@@ -10,9 +10,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Nexus Login/Registration</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <title>Nexus Login/Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="container">
