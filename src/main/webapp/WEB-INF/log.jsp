@@ -14,7 +14,7 @@
     <title>Nexus Login/Registration</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-blue-200">
     <div class="container">
         <h1 class="text-center text-8xl my-5">Nexus</h1>
 		<div class="flex justify-evenly">
